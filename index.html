@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Description</title>
+    <link rel="stylesheet" href="description.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <!-- change the name of logo according to your name of image (mani/vengu) -->
+                <a href="#"><img src="p2.png" alt="Placeme Logo" style="height: 40px;"></a>
+            </li>
+            <li class="item"><a href="{% url 'job_seeker:home' %}">Home</a></li>
+            <li class="item"><a href="{% url 'job_seeker:job' %}">Jobs</a></li>
+            <li class="item"><a href="{% url 'job_seeker:profile' %}">Notifications</a></li>
+            <li class="item"><a href="{% url 'job_seeker:profile' %}">Profile</a></li>
+            <li class="toggle" id="menu-toggle"><span class="bars"></span></li>
+            <li class="item button"><a href="{% url 'auth:login' %}">Log In</a></li>
+            <li class="item">
+                <select name="Usertypes" onchange="location = this.value;">
+                    <option value="{% url 'job_seeker:home' %}">Job Seeker</option>
+                    <option value="{% url 'recruiters:home' %}">Recruiter</option>
+                    <option value="{% url 'administrator:dashboard' %}">Administrator</option>
+                    <option value="{% url 'refer_and_earn:home' %}">Refer and earn</option>
+                </select> 
+            </li>
+        </ul>
+    </nav>
+    
+    <section class="section-1">
+        <div class="fixed">
+        <div class="div-1">
+            <h1>Frontend Developer</h1>
+            <h5>TechVision Solutions</h5>
+        
+            <button class="apply-button">Apply</button>
+            <section class="section-2">
+                <div class="div-2">
+                    <ul>
+                        <li><a href="#highlights">Highlights</a></li>
+                        <li><a href="#description">Job Description</a></li>
+                        <li><a href="#key-skills">Key Skills</a></li>
+                        <li><a href="#more-info">More Info</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                    </ul>
+                </div>
+            </div>
+                <hr class="divider">
+                <div class="scroll">
+                <section class="section-3" id="highlights">
+                    <div class="div-3">
+                      <div class="icon-item">
+                      <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Bengaluru/Bangalore, K.K Nagar chennai</li>
+                        <div class="data">
+                        <li><i class="fas fa-briefcase"></i> 0-2 Years</li>
+                        <li><i class="fas fa-indian-rupee-sign"></i> 30,000/Month</li>
+                    </div>
+                        <div class="data">
+                        <li> <i class="fas fa-calendar-alt"></i> 5 days ago</li>
+                        <li><i class="fas fa-eye"></i> 15 viewed</li>
+                        <li><i class="fas fa-paper-plane"></i> 4 applied</li>
+                        </div>
+                      </ul>
+                      </div>
+                    </div>
+                </section>
+                <div class="s-div-4">
+                <hr class="divider">
+                <h3 id="description">Description</h3>
+                <p>Candidate will be responsible for closely working with team to develop interactive and dynamic websites.
+Candidate should be proficient in using HTML, XHTML, CSS, JavaScript and related technologies
+As a web designer, you ll be required to work upon building websites.Since our website is entirely dedicated for e-commerce uses, you ve to work upon making our website user friendly and easy to use
+                </p>
+                <hr class="divider">                <section class="responsibilities" id="key-skills">
+                    <h3>Key Skills</h3>
+                    <div class="skills">
+                        <span>Git</span>
+                        <span>React</span>
+                        <span>Angular</span>
+                        <span>SEO basic</span>
+                        <span>problem solving</span>
+                        <span>css</span>
+
+
+                        
+
+                    </div>
+                </section>
+                <hr class="divider">
+                <section class="skills-qualifications">
+                    <h3>Addtional Info</h3>
+                    <ul>
+                    <div><strong>Role: </strong>Web Designer</div>
+                    <div><strong>Shift: </strong>Rotational</div>
+                    <div><strong>Working mode: </strong>No site</div>
+                    <div><strong>Employment Type: </strong> Full Time, Permanent</div>
+                    <div><strong>Education: </strong>
+                    Any UG Graduate</div>
+                    </ul>
+                </section>
+                <hr class="divider">
+                <section class="benefits" id="benefits">
+                    <h3>Benefits</h3>
+                    <ul>
+                        <li>Competitive salary and performance-based bonuses.</li>
+                        <li>Health, dental, and vision insurance.</li>
+                        <li>Flexible working hours and remote work options.</li>
+                        <li>Professional development and training opportunities.</li>
+                        <li>Company-sponsored events and activities.</li>
+                    </ul>
+                </section>
+        </div>
+    </section>
+        </div>
+    </section>
+</body>
+</html>
